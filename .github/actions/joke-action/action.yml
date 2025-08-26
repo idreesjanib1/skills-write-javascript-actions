@@ -1,0 +1,5 @@
+name: "My Joke Action"
+description: "This action tells a joke."
+runs:
+  using: "node16"
+  main: "index.js"
