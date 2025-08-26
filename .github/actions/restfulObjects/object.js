@@ -2,11 +2,12 @@ const request = require("request-promise");
 
 const options = {
   method: "GET",
-  uri: "https://api.restful-api.dev/objects",
-  json: true,
+  uri: "https://icanhazdadjoke.com/",
   headers: {
     Accept: "application/json",
+    "User-Agent": "Writing JavaScript action GitHub Skills course.",
   },
+  json: true,
 };
 
 async function getObjects() {
