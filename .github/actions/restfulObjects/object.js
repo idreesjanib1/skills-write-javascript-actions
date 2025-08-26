@@ -1,12 +1,13 @@
-
-const request = require('request-promise');
+const request = require("request-promise");
 
 const options = {
-
-    method:'GET',
-    uri:'https://api.restful-api.dev/objects',
-    json:true
-}
+  method: "GET",
+  uri: "https://api.restful-api.dev/objects",
+  json: true,
+  headers: {
+    Accept: "application/json",
+  },
+};
 
 async function getObjects() {
   const res = await request(options);
