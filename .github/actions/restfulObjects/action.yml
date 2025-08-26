@@ -1,0 +1,11 @@
+name: "my restful objects action"
+
+description: "use an external API to retrieve and display objects"
+
+outputs:
+  objects-output:
+    description: The resulting objects from the API
+
+runs:
+  using: "node16"
+  main: "main.js"

@@ -1,0 +1,9 @@
+name: Custom Trigger
+
+on:
+  workflow_dispatch:
+
+  steps:
+    - uses: actions/checkout@v4
+    - name: Triggered Manually
+      uses: ./.github/actions/restfulObjects
