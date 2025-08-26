@@ -1,5 +1,10 @@
 name: "My Joke Action"
 description: "This action tells a joke."
+
+outputs:
+  joke-output:
+    description: The resulting joke from the icanhazdadjokes API
+
 runs:
   using: "node16"
   main: "index.js"
