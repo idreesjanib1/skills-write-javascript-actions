@@ -7,6 +7,12 @@ jobs:
   manual-trigger:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Triggered Manually
+      - name: Step 1 - Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Step 2 - Install dependencies
+        working-directory: ./.github/actions/restfulObjects
+        run: npm install request request-promise @actions/core
+      
+      - name: Step 3 - Triggered Manually
         uses: ./.github/actions/restfulObjects

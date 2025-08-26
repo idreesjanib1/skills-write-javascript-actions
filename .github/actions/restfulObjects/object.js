@@ -2,18 +2,17 @@ const request = require("request-promise");
 
 const options = {
   method: "GET",
-  uri: "https://icanhazdadjoke.com/",
+  uri: "https://api.restful-api.dev/objects",
+  json: true,
   headers: {
     Accept: "application/json",
-    "User-Agent": "Writing JavaScript action GitHub Skills course.",
   },
-  json: true,
 };
 
 async function getObjects() {
   const res = await request(options);
   console.log(res);
-  return res.joke;
+  return res.objects;
 }
 
 module.exports = getObjects;
