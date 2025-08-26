@@ -12,6 +12,7 @@ const options = {
 async function getObjects() {
   const res = await request(options);
   console.log(res);
+  debugger;
   return res.objects;
 }
 
